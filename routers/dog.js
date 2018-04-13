@@ -7,8 +7,9 @@ router.get("/", (req, res, next) => {
 	res.json({ nextDog })
 })
 router.post("/", (req, res, next) => {
-	console.log(req.body)
-	res.json({ message: "success", body: req.body })
+	const newDog = req.body
+	Dog.enqueDog(newDog)
+	res.json({ message: "success" })
 })
 router.delete("/", (req, res, next) => {
 	const adopted = Dog.dequeDog()
