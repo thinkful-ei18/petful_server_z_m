@@ -14,6 +14,12 @@ function init() {
 	})
 }
 
+function enqueDog(dog) {
+	dogQue.enqueue(dog)
+}
+function enqueCat(cat) {
+	catQue.enqueue(cat)
+}
 function getDog() {
 	if (dogQue.first) {
 		return dogQue.first.value
@@ -44,5 +50,7 @@ module.exports = {
 	getDog,
 	getCat,
 	dequeDog,
-	dequeCat
+	dequeCat,
+	enqueDog,
+	enqueCat
 }

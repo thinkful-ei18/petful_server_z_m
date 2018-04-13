@@ -14,6 +14,9 @@ const dogRouter = require("./routers/dog")
 const catRouter = require("./routers/cat")
 const refreshRouter = require("./routers/refresh")
 
+// body parser
+app.use(express.json())
+
 app.use(
 	morgan(process.env.NODE_ENV === "production" ? "common" : "dev", {
 		skip: (req, res) => process.env.NODE_ENV === "test"
