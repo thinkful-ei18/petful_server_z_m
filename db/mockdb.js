@@ -32,7 +32,7 @@ const catArray = [
 	{
 		imageURL: "https://upload.wikimedia.org/wikipedia/commons/6/64/Ragdoll_from_Gatil_Ragbelas.jpg",
 		imageDescription: "Orange bengal cat with black stripes lounging on concrete.",
-		name: "Fluffy",
+		name: "Ragdo",
 		sex: "Female",
 		age: 2,
 		breed: "Ragdoll",

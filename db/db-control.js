@@ -1,11 +1,11 @@
 const db = require("./mockdb")
 
-let dogArray = db.dogArray
-let catArray = db.catArray
+let dogArray = db.dogArray.slice()
+let catArray = db.catArray.slice()
 
 function init() {
-	dogArray = db.dogArray
-	catArray = db.catArray
+	dogArray = db.dogArray.slice()
+	catArray = db.catArray.slice()
 }
 
 function getDog() {

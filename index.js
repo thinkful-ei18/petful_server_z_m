@@ -12,6 +12,7 @@ const app = express()
 //import routes
 const dogRouter = require("./routers/dog")
 const catRouter = require("./routers/cat")
+const refreshRouter = require("./routers/refresh")
 
 app.use(
 	morgan(process.env.NODE_ENV === "production" ? "common" : "dev", {
@@ -28,6 +29,7 @@ app.use(
 //mount routes
 app.use("/dog", dogRouter)
 app.use("/cat", catRouter)
+app.use("/refresh", refreshRouter)
 
 function runServer(port = PORT) {
 	const server = app
