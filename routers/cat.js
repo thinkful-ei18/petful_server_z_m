@@ -7,8 +7,9 @@ router.get("/", (req, res, next) => {
 })
 
 router.post("/", (req, res, next) => {
-	// const dog = req.body
-	// Cat.enqDog(dog)
+	const newCat = req.body.nextCat
+	res.json({ message: req.body.nextCat })
+	Cat.enqueueDog(newCat)
 })
 
 router.delete("/", (req, res, next) => {

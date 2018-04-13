@@ -42,6 +42,12 @@ function dequeDog() {
 function dequeCat() {
 	return catQue.dequeue()
 }
+function enqueueDog(dog) {
+	return dogQue.enqueue(dog)
+}
+function enqueueCat(cat) {
+	return catQue.enqueue(cat)
+}
 
 init()
 
@@ -51,6 +57,6 @@ module.exports = {
 	getCat,
 	dequeDog,
 	dequeCat,
-	enqueDog,
-	enqueCat
+	enqueueDog,
+	enqueueCat
 }
